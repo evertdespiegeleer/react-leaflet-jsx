@@ -1,5 +1,5 @@
 import { MapContainer, TileLayer } from 'react-leaflet'
-import { JSXMapContent } from '../../../src/Component'
+import { JSXMapContent } from '../../../src/main'
 import 'leaflet/dist/leaflet.css'
 import { InteractiveRestaurantMarker, type Props as InteractiveRestaurantMarkerProps } from './components/InteractiveRestaurantMarker'
 import { useMemo, useState } from 'react'

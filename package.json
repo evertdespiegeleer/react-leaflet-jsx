@@ -5,28 +5,37 @@
     "type": "git",
     "url": "git+https://github.com/evertdespiegeleer/react-leaflet-jsx.git"
   },
+  "module": "./dist/esm/main.js",
   "exports": {
     "import": {
-      "types": "./dist/main.d.ts",
-      "default": "./dist/main.js"
+      "types": "./dist/types/main.d.ts",
+      "default": "./dist/esm/main.js"
     },
     "require": {
-      "types": "./dist/main.d.ts",
-      "default": "./dist/main.js"
+      "types": "./dist/cjs/main.d.ts",
+      "default": "./dist/cjs/main.js"
     }
   },
-  "main": "./dist/main.js",
-  "types": "./dist/main.d.ts",
+  "main": "./dist/cjs/main.js",
+  "types": "./dist/types/main.d.ts",
   "license": "MIT",
   "author": "Evert De Spiegeleer",
   "type": "module",
+  "files": [
+    "./readme.md",
+    "./dist"
+  ],
   "scripts": {
-    "build": "tsc -p ./tsconfig.build.json",
+    "build": "tsc && rm -r ./dist || true && npx rollup -c",
     "lint": "eslint 'src/**/*.tsx'",
     "lint:fix": "npm run lint -- --fix",
     "prepare": "npx husky install"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
     "@types/leaflet": "^1.9.12",
     "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.0",
@@ -39,12 +48,17 @@
     "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
     "eslint-plugin-promise": "^6.0.0",
     "husky": "^8.0.0",
+    "rollup": "^4.21.2",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "tslib": "^2.7.0",
     "typescript": "^4.4.4"
   },
   "peerDependencies": {
     "leaflet": "^1.9.4",
-    "react-leaflet": "^4.2.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-leaflet": "^4.2.1"
   },
   "engines": {
     "node": "^20.10.x",

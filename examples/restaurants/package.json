@@ -14,7 +14,8 @@
     "leaflet": "^1.9.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-leaflet": "^4.2.1"
+    "react-leaflet": "^4.2.1",
+    "react-leaflet-jsx": "file:../.."
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

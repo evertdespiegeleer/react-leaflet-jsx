@@ -12,8 +12,9 @@
         "moduleResolution": "NodeNext",
         "module": "NodeNext",
         "sourceMap": true,
-        "declaration": true,
-        "declarationMap": true,
+        // "declaration": true,
+        // "declarationMap": true,
+        "noEmit": true,
         "baseUrl": ".",
         "paths": {
           "*": ["node_modules/*"],
