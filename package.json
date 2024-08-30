@@ -1,6 +1,6 @@
 {
   "name": "react-leaflet-jsx",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/evertdespiegeleer/react-leaflet-jsx.git"
@@ -57,8 +57,9 @@
   },
   "peerDependencies": {
     "leaflet": "^1.9.4",
-    "react-dom": "^18.3.1",
-    "react-leaflet": "^4.2.1"
+    "react-dom": "^18.0.0",
+    "react-leaflet": "^4.0.0",
+    "react": "^18.0.0"
   },
   "engines": {
     "node": "^20.10.x",
