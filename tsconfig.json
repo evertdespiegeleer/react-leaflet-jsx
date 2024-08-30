@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "target": "es2022",
+        "allowJs": true,
+        "resolveJsonModule": true,
+        "moduleDetection": "force",
+        "isolatedModules": true,
+        "strict": true,
+        "noUncheckedIndexedAccess": true,
+        "moduleResolution": "NodeNext",
+        "module": "NodeNext",
+        "sourceMap": true,
+        "declaration": true,
+        "declarationMap": true,
+        "baseUrl": ".",
+        "paths": {
+          "*": ["node_modules/*"],
+        },
+        "jsx": "react-jsx",
+        "lib": ["es2022", "dom", "dom.iterable"],
+        "plugins": [
+          { "name": "typescript-plugin-css-modules" }
+        ]
+    },
+    "include": [
+        "./src/**/*.*",
+    ],
+    "ts-node": {
+        "experimentalSpecifierResolution": "node",
+        "transpileOnly": true,
+        "esm": true,
+      },
+}

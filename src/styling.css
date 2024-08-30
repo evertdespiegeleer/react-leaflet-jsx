@@ -1,0 +1,14 @@
+.jsxMapMarker {
+    background: transparent;
+    border: none;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 !important;
+    cursor: inherit !important;
+}
+
+.jsxMapMarkerContent {
+    display: block;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+}
