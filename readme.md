@@ -29,7 +29,7 @@ const position = {{ lat: 50, lng: 3 }}
 function MyMap() {
   return (
     <MapContainer center={position} zoom={13} style={{ height: '100vh' }}>
-      <JSXMapContent position={position}>
+      <JSXMapContent location={position}>
         <div>
           This div is placed at the specified position on the map, you can put whatever here!
         </div>
